@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GWorld Dinning</string>
+    <string name="restaurant_types">Restaurant Types</string>
+    <string name="dialog_title">Restaurant types for GWorld Dining</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+
+    <string-array name="restaurant_item">
+        <item>American</item>
+        <item>Pizza</item>
+        <item>Burgers</item>
+        <item>Salad</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Mexican</item>
+    </string-array>
+</resources>
