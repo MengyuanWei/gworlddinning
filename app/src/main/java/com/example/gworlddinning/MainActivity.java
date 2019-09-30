@@ -140,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
         mEditor.apply();
     }
 
+    // Get distance function here.
 //    private int getDistance(){
 //        SharedPreferences mSharedPreferences = getSharedPreferences("edit_distance", MODE_PRIVATE);
 //        int selectedDistance = mSharedPreferences.getInt("distance",getResources(),getDistance(R.distance.edit_distance));
