@@ -132,4 +132,20 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+    private void storeDistance(int distance){
+        SharedPreferences mSharedPreferences = getSharedPreferences("edit_distance", MODE_PRIVATE);
+        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+        mEditor.putInt("distance", distance);
+        mEditor.apply();
+    }
+
+//    private int getDistance(){
+//        SharedPreferences mSharedPreferences = getSharedPreferences("edit_distance", MODE_PRIVATE);
+//        int selectedDistance = mSharedPreferences.getInt("distance",getResources(),getDistance(R.distance.edit_distance));
+//        return selectedDistance;
+//    }
+
 }
+
+
