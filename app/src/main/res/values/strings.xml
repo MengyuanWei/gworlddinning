@@ -6,6 +6,7 @@
     <string name="dismiss_label">Dismiss</string>
     <string name="clear_all_label">Clear all</string>
     <string name="reviews">reviews</string>
+    <string name="reviews_title">Reviews near %1$s</string>
 
     <string-array name="restaurant_item">
         <item>American</item>
