@@ -7,6 +7,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.inputmethodservice.Keyboard
+import android.net.sip.SipSession
 import android.nfc.Tag
 import android.os.Bundle
 import android.preference.PreferenceManager
@@ -17,6 +18,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 
 import java.util.ArrayList
 import java.util.prefs.PreferenceChangeEvent
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     // SharedPreferences.
     // SharedPreferences preferences = getSharedPreferences("MyPref", MODE_PRIVATE);
     // SharedPreferences.Editor editor = preferences.edit();
+
+    lateinit var review: Button
 
     private var editTextDistance: EditText? = null
     private var buttonFindRestaurants: Button? = null
@@ -58,6 +62,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        review = findViewById(R.id.review)
+        review.setOnClickListener{
+            val intent = Intent(this, ReviewsActivity:: class.java)
+            intent.putExtra("LOCATION","Washington D.C.")
+            // Start the review activity.
+            startActivity(intent)
+        }
 
         editTextDistance = findViewById(R.id.edit_distance)
         buttonFindRestaurants = findViewById(R.id.button_find_restaurants)
