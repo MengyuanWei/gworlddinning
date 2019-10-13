@@ -5,5 +5,5 @@ import android.widget.RatingBar
 data class Review constructor(
         val name: String,
         val content: String,
-        val ratingBar: Double
+        val ratingBar: Float
 )
